@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNMI IN FOCUS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://icons.getbootstrap.com/assets/icons/bootstrap-icons.css">
+</head>
+<body>
+
+    <!--Header Navigation-->
+    <header>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="saipan.html"><i class="fas fa-tree"></i> Saipan</a>
+            <a href="tinian.html"><i class="fas fa-tree"></i> Tinian</a>
+            <a href="rota.html"><i class="fas fa-location-dot"></i> Rota</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </header>
+
+
+<!--Hero Section-->
+<section class="hero">
+    <h1>Welcome to CNMI IN FOCUS</h1>
+    <p>Your Ultimate Guide to the Northern Mariana Islands</p>
+</section>
+<!--Slideshow Section-->
+<section class="slideshow">
+<div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="slide1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="slide2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="slide3.jpg" style="width:100%">
+        </div>
+    </div>
+    <p>Your guide to the beautiful islands of the Northern Mariana Islands.</p>
+</section>
+
+<!--Footer-->
+<footer>
+    <p><a href="#about.html">About</a></p> 
+    <p>&copy; 2025 CNMI IN FOCUS. All rights reserved.</p>
+</footer>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
