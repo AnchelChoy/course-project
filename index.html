@@ -3,67 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CNMI IN FOCUS</title>
+    <title>Home - CNMI In Focus</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://icons.getbootstrap.com/assets/icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&family=Pacifico&display=swap">
 </head>
 <body>
+   <header>
+    <h1 class="logo">CNMI IN FOCUS</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="saipan.html">Saipan</a></li>
+            <li><a href="tinian.html">Tinian</a></li>
+            <li><a href="rota.html">Rota</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!--Header Navigation-->
-    <header>
-        <nav>
-            <a href="index.html"><i class="fas fa-home"></i> Home</a>
-            <a href="saipan.html"><i class="fas fa-location-dot"></i> Saipan</a>
-            <a href="tinian.html"><i class="fas fa-location-dot"></i> Tinian</a>
-            <a href="rota.html"><i class="fas fa-location-dot"></i> Rota</a>
-            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
-        </nav>
-    </header>
+<main>
+    <section class="hero">
+        <h2>Welcome to CNMI In Focus</h2>
+        <p>Plan your adventure across Saipan, Tinian, and Rota with insights and local highlights.</p>
+    <button class="explore-btn" onclick="location.href='saipan.html'">Start Exploring</button>    </section>
 
+    <section class="slideshow">
+        <div class="slide1"><img src="slide1.jpg" alt="Saipan view"></div>
+        
+</main>
 
-<!--Hero Section-->
-<section class="hero">
-    <h1>Welcome to CNMI IN FOCUS</h1>
-    <p>Your Ultimate Guide to the Northern Mariana Islands</p>
-</section>
-<!--Slideshow Section-->
-<section class="slideshow">
-<div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="slide1.jpg" style=min-height:auto min-width:1000px>
-        </div>
-
-        <div class="mySlides fade">
-            <img src="slide2.jpg" style= min-height:auto min-width:1000px>
-        </div>
-
-        <div class="mySlides fade">
-            <img src="slide3.jpg" style=min-height:auto min-width:1000px>
-        </div>
-</section>
-
-<!--Footer-->
 <footer>
-    <p><a href="#about.html">About</a></p> 
-    <p>&copy; 2025 CNMI IN FOCUS. All rights reserved.</p>
+    <p>&copy; 2025 CNMI In Focus | Designed by Angel Joy C. Jacinto</p>
 </footer>
 
-<script>
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
-}
-</script>
+<script src="scripts.js"></script>
 </body>
 </html>
