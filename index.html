@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - CNMI In Focus</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&family=Pacifico&display=swap">
+    <script src="scripts.js"></script>
+
 </head>
 <body>
-   <header>
-    <h1 class="logo">CNMI IN FOCUS</h1>
+   <header class="site-header">
+<h1 class="logo">CNMI IN FOCUS</h1>
+    <p>Your gateway to the Northern Mariana Islands</p>
+    </div>
+
+
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -22,22 +28,39 @@
         </ul>
     </nav>
 </header>
-
 <main>
-    <section class="hero">
+    <section class="welcome" id="welcome">
         <h2>Welcome to CNMI In Focus</h2>
-        <p>Plan your adventure across Saipan, Tinian, and Rota with insights and local highlights.</p>
-    <button class="explore-btn" onclick="location.href='saipan.html'">Start Exploring</button>    </section>
-
-    <section class="slideshow">
-        <div class="slide1"><img src="slide1.jpg" alt="Saipan view"></div>
-        
+        <p>Plan your adventure across Saipan, Tinian, and Rota with insights on some restaurants, activities, and historical sites.</p>
+    </section>
 </main>
+
+<section id="destinations">
+    <div class="card" id="saipan">
+        <img src="/images/saipan.jpg" alt="Saipan Beach">
+        <div class="text">
+        <h3><a href="saipan.html">Saipan</a></h3>
+        <p>Discover the vibrant culture, stunning beaches, and historical sites of Saipan.</p>
+        </div>
+    </div>
+    <div class="card" id="tinian">
+        <img src="/images/tinian.jpg" alt="Tinian Landscape">
+        <div class="text">
+        <h3><a href="tinian.html">Tinian</a></h3>
+        <p>Experience the serene beauty and rich history of Tinian Island.</p>
+        </div>
+    </div>
+    <div class="card" id="rota">
+        <img src="/images/rota.jpg" alt="Rota Scenery">
+        <div class="text">
+        <h3><a href="rota.html">Rota</a></h3>
+        <p>Explore the unspoiled nature and friendly communities of Rota.</p>
+        </div>
+    </div>
+</section>
 
 <footer>
     <p>&copy; 2025 CNMI In Focus | Designed by Angel Joy C. Jacinto</p>
 </footer>
-
-<script src="scripts.js"></script>
 </body>
 </html>
